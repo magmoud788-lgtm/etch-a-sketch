@@ -1,0 +1,38 @@
+#container {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(231, 25, 25);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.hovered {
+    background-color: rgb(77, 124, 81);
+}
+
+.hovering {
+    background-color: black;
+}
+
+.biggestcontainer {
+    display: flex;
+}
+
+@keyframes colorCycle {
+    0% { background-color: lightcoral; }
+    25% { background-color: lightgray; }
+    50% { background-color: rgb(77, 124, 81); }
+    75% { background-color:rgb(231, 25, 25); }
+    100% { background-color: purple; }
+}
+
+#userinput {
+    animation: colorCycle 3s infinite;
+}
